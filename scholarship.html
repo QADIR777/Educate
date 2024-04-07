@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <style>
+        @media (max-width: 449px) {
+            .upnavcenter {
+                text-align: center;
+                float: none;
+
+            }
+
+            .navwrap {
+                margin-left: 2vw;
+
+            }
+        }
+
+        @media (min-width: 450px) {
+            .navwrap {
+                margin-left: 9vw;
+                margin-right: 18vw;
+            }
+        }
+
+
+
+        .backgroundimage {
+            width: 100%;
+            height: 50vh;
+            background-image: linear-gradient(rgba(14, 16, 44, 0.8), rgba(14, 16, 44, 0.8)), url("backgroundd.webp");
+            background-size: cover;
+        }
+
+        .btnns,
+        .btnn button {
+            background-color: #ffb830;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+        }
+
+        .btnns:hover,
+        .btnn button:hover {
+            border-top: 4px solid #ffb830;
+            border-bottom: 4px solid #ffb830;
+            background: white;
+            color: #ffb830;
+        }
+
+        .titless {
+            font-size: 40px;
+            font-weight: 700;
+            color: #1a1a37;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0px 0px 8px 1px lightgray;
+            transition: .3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #323274;
+
+        }
+
+        .nav-link:hover {
+            color: #1a1a37 !important;
+            transition-duration: .4s;
+
+        }
+
+        .upnavcenter a:hover {
+            color: #ffb830 !important;
+            transition-duration: .4s;
+        }
+        .list-unstyled li a:hover {
+            color: #ffb830 !important;
+            transition-duration: .4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container nav1 py-2 px-0 bg-white" style="width: 100%;">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 col-md-5 py-2 upnavcenter" style="font-size: 13px; color: rgb(82, 82, 82);">
+                <a href="#"
+                    style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;"><strong
+                        style="font-size: 13px;">CALL </strong> +44 300 303 0266</a>
+                <span><i class="fa-brands fa-facebook  me-2"></i>
+                    <i class="fa-brands fa-x-twitter me-2"></i>
+                    <i class="fa-brands fa-github me-2"></i>
+                    <i class="fa-brands fa-instagram me-2"></i>
+                </span>
+            </div>
+            <div class="col-lg-8 col-sm-12 col-md-7 py-2 upnavcenter" style="font-size: 13px; color: rgb(82, 82, 82);">
+                <div style="float: right;">
+                    <a href="notic.html" class="py-5"
+                        style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;">NOTICE</a>
+                    <a href="research.html"
+                        style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;">RESEARCH</a>
+                    <a href="scholarship.html"
+                        style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;">SCHOLARSHIP</a>
+                    <a href=""
+                        style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</a>
+
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content py-3 px-4">
+
+                                <div class="modal-body">
+                                    <div
+                                        style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                                        <h2 class="titless">Login</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="mt-4 mb-4">
+                                        <form action="">
+                                            <input type="text" name="" id="" class="form-control mb-3"
+                                                style="padding: 13px 0px 13px 20px;" placeholder="Username">
+                                            <input type="email" name="" id="" class="form-control mb-3 "
+                                                style="padding: 13px 0px 13px 20px;" placeholder="E-Mail">
+                                            <input type="password" name="" id="" class="form-control"
+                                                style="padding: 13px 0px 13px 20px;" placeholder="Password">
+                                    </div>
+
+
+                                    <div>
+
+                                        <input type="submit" class="btn btnns " style="padding: 11px 35px;"
+                                            value="Login">
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <a href=""
+                        style="margin-right: 15px; text-decoration: none; color: rgb(56, 56, 56); font-weight: 600;"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">REGISTER</a>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content py-3 px-4">
+
+                                <div class="modal-body">
+                                    <div
+                                        style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                                        <h2 class="titless">Register</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="mt-4 mb-4">
+                                        <form action="">
+                                            <input type="text" name="" id="" class="form-control mb-3 "
+                                                style="padding: 13px 0px 13px 20px;" placeholder="Phone-No">
+                                            <input type="text" name="" id="" class="form-control mb-3 "
+                                                style="padding: 13px 0px 13px 20px;" placeholder="Username">
+                                            <input type="email" name="" id="" class="form-control mb-3 "
+                                                style="padding: 13px 0px 13px 20px;" placeholder="E-Mail">
+                                            <input type="password" name="" id="" class="form-control "
+                                                style="padding: 13px 0px 13px 20px;" placeholder="Password">
+                                    </div>
+
+
+                                    <div>
+
+                                        <input type="submit" class="btn btnns " style="padding: 11px 35px;"
+                                            value="Sign Up">
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #1a1a37; width: 100%; position: sticky; top: -1px; z-index: 400; ">
+        <div class="container-fluid">
+            <div class="navwrap"> <a class="navbar-brand" href="#">
+                    <img src="logoo.webp" alt=""> <span style="font-size: 35px; font-weight: 700;">Educate</span>
+                </a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #ffb830;">
+                <ul class="navbar-nav py-4 ps-5 me-auto mb-2 mb-lg-0"
+                    style="font-size: 18px; font-weight: 500; color: white; width: 100%;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle ms-2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #1a1a37; color: white;"
+                            aria-labelledby="navbarDropdown ">
+                            <li><a class="dropdown-item text-white" href="notic.html">Notice</a></li>
+                            <li><a class="dropdown-item text-white" href="research.html">Research</a></li>
+                            <li><a class="dropdown-item text-white" href="scholarship.html">ScholarShips</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-4" href=""><i class="fa-solid fa-search"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="backgroundimage img-fluid">
+
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-5 col-md-8 col-sm-11" style="margin-top: 12vh;">
+                    <div data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="400"
+                        data-aos-duration="1100"><span><a href="home.html"
+                                style="text-decoration: none; font-weight: 800; color: #ffb830; font-size: 30px;">Home
+                            </a></span><i class="fa-solid fa-arrow-left fs-6 text-white"></i> <a
+                            style="text-decoration: none; color: white; font-size: 8vmin;font-weight: 700;"
+                            href="scholarship.html">Scholarship</a></div>
+                </div>
+                <div class="col-lg-8">
+                    <p style="font-weight: 400; color: #d8d8d8; font-size: 16px; line-height: 1.9;"
+                        data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="400"
+                        data-aos-duration="1400">Our courses offer a
+                        good compromise between the continuous assessment favoured by some universities and the emphasis
+                        placed on final exams by others.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-fluid" width="100%"
+                    src="https://demo.themefisher.com/educenter-bootstrap/images/scholarship/scholarship.jpg"
+                    alt="scholarship news">
+            </div>
+
+            <div class="col-lg-6 ps-4">
+                <h2 class="titless fs-1">SCHOLARSHIPS NEWS</h2>
+                <strong class="mb-4 d-block"><i>Our campuses are living laboratories for sustainability.</i></strong>
+                <p style="font-weight: 400; color: #5c5c77; font-size: 16px; line-height: 1.9;">Lorem ipsum dolor sit
+                    amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore
+                    et.dolore magna aliquauis aute irure dolor.
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+                    dolor, sit
+                    amet consectetur adipisicing elit. Quas cum ut ab nesciunt distinctio maxime expedita fugit laborum?
+                    Aliquid,
+                    quia.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <!-- scholarship item -->
+            <div class="col-lg-4 col-sm-6 mb-4 ">
+                <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+                    <img class="card-img-top rounded-0"
+                        src="	https://demo.themefisher.com/educenter-bootstrap/images/scholarship/scholarship-item-1.jpg"
+                        alt="scholarship-thumb">
+                    <div class="card-body">
+                        <p class="mb-1">Engineering</p>
+                        <h4 class="card-title titless fs-4 mb-3">CHEMICAL ENGINEERING</h4>
+                        <ul class="list-styled"
+                            style="font-weight: 400; color: #2c2c2c; font-size: 17px; line-height: 1.9;">
+                            <li>institutes</li>
+                            <li>Smart-affiliated research</li>
+                            <li>Digital Access to Scholarship</li>
+                            <li>Smart Catalyst</li>
+                            <li>Smart Library Portal</li>
+                            <li>Smart research programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- scholarship item -->
+            <div class="col-lg-4 col-sm-6 mb-4 ">
+                <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+                    <img class="card-img-top rounded-0"
+                        src="https://demo.themefisher.com/educenter-bootstrap/images/scholarship/scholarship-item-2.jpg"
+                        alt="scholarship-thumb">
+                    <div class="card-body">
+                        <p class="mb-1">Design & Arts</p>
+                        <h4 class="card-title titless fs-4 mb-3">MUSIC & ARTS</h4>
+                        <ul class="list-styled"
+                            style="font-weight: 400; color: #2c2c2c; font-size: 17px; line-height: 1.9;">
+                            <li>institutes</li>
+                            <li>Smart-affiliated research</li>
+                            <li>Digital Access to Scholarship</li>
+                            <li>Smart Catalyst</li>
+                            <li>Smart Library Portal</li>
+                            <li>Smart research programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- scholarship item -->
+            <div class="col-lg-4 col-sm-6 mb-4 ">
+                <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+                    <img class="card-img-top rounded-0"
+                        src="	https://demo.themefisher.com/educenter-bootstrap/images/scholarship/scholarship-item-3.jpg"
+                        alt="scholarship-thumb">
+                    <div class="card-body">
+                        <p class="mb-1">Design & Arts</p>
+                        <h4 class="card-title titless fs-4 mb-3">GRAPHICS DESIGN</h4>
+                        <ul class="list-styled"
+                            style="font-weight: 400; color: #2c2c2c; font-size: 17px; line-height: 1.9;">
+                            <li>institutes</li>
+                            <li>Smart-affiliated research</li>
+                            <li>Digital Access to Scholarship</li>
+                            <li>Smart Catalyst</li>
+                            <li>Smart Library Portal</li>
+                            <li>Smart research programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <footer class="" style="background-color: #182b45; height: 100%; width: 100%; padding-top: 80px;
+padding-bottom: 15px; color: white; margin-top: 130px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-8 mt-4">
+
+                    <img style="margin-top: -20px;" src="logoo.webp" alt="">
+                    <span style="font-size: 35px; font-weight: 700;">Educate</span>
+                    <ul class="list-unstyled" style="color: #afafaf; margin-top: 30px;">
+                        <li class="mb-2">Badar Residency, Main Wadu Road, Qasimabad/Hyderbad.</li>
+                        <li class="mb-2">+92 319 2397188</li>
+                        <li class="mb-2">+92 340 2212138</li>
+                        <li class="mb-2">qbux70654@gmail.com</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0 ps-3 mt-4">
+                    <h4 class="text-white mb-5">COMPANY</h4>
+                    <ul class="list-unstyled" style="color: #afafaf;">
+                        <li class="mb-3"><a href="about.html" style="color: #afafaf; text-decoration: none;">About
+                                Us</a></li>
+                        <li class="mb-3"><a href="about.html" style="color: #afafaf; text-decoration: none;">Our
+                                Teacher</a></li>
+                        <li class="mb-3"><a href="contact.html"
+                                style="color: #afafaf; text-decoration: none;">Contact</a></li>
+                        <li class="mb-3"><a href="blog.html" style="color: #afafaf; text-decoration: none;">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0 mt-4" style="color: #afafaf;">
+                    <h4 class="text-white mb-5">LINKS</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="course.html"
+                                style="color: #afafaf; text-decoration: none;">Courses</a></li>
+                        <li class="mb-3"><a href="event.html" style="color: #afafaf; text-decoration: none;">Events</a>
+                        </li>
+                        <li class="mb-3"><a href="notic.html" style="color: #afafaf; text-decoration: none;">Notice</a>
+                        </li>
+                        <li class="mb-3"><a href="scholarship.html"
+                                style="color: #afafaf; text-decoration: none;">Scholarship</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0 mt-4" style="color: #afafaf;">
+                    <h4 class="text-white mb-5">SUPPORT</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" style="color: #afafaf; text-decoration: none;">Forums</a></li>
+                        <li class="mb-3"><a href="#" style="color: #afafaf; text-decoration: none;">Documentation</a>
+                        </li>
+                        <li class="mb-3"><a href="#" style="color: #afafaf; text-decoration: none;">Language</a></li>
+                        <li class="mb-3"><a href="#" style="color: #afafaf; text-decoration: none;">Release Status</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0 mt-4" style="color: #afafaf;">
+                    <h4 class="text-white mb-5">RECOMMEND</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">WordPress</li>
+                        <li class="mb-3">LearnPress</li>
+                        <li class="mb-3">WooCommerce</li>
+                        <li class="mb-3">bbPress</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <hr style="margin-top: 90px; ">
+            <div class="row col-lg-12 col-md-12 col-sm-12 px-5 mt-4">
+                <div class="col-lg-7 col-md-6 col-sm-12" style="font-size: 17px; color: rgb(202, 202, 202);">
+                    Copyright © 2024 , designed & developed by Qadir Bux
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12"
+                    style="text-align: end; font-size: 18px; color: rgb(202, 202, 202);">
+                    <ul class="list-inline" style="color: #ffb830;">
+                        <li class="list-inline-item"><i class="fa-brands fa-facebook-f me-3"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-twitter me-3"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-google-plus me-3"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-linkedin-in "></i></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
